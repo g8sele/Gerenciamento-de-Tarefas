@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadTarefas.css">
+    <title>Cadastro de Tarefas</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Cadastro de Tarefas</h1>
+        <ul>
+            <li><a href="index.html">Cadastro de Usuários</a></li>
+            <li><a href="cadTarefas.html">Cadastro de Tarefas</a></li>
+            <li><a href="tarefas.html">Gerenciar Tarefas</a></li>
+        </ul>
+    </div>
+
+    <div class="form-container">
+        <form id="cadastroTarefaForm">
+            <label for="nome_tarefa">Nome da Tarefa:</label>
+            <input type="text" id="nome_tarefa" required>
+
+            <label for="descricao_tarefa">Descrição da Tarefa:</label>
+            <textarea id="descricao_tarefa" required></textarea>
+
+            <label for="nome_setor">Setor:</label>
+            <input type="text" id="nome_setor" required>
+
+            <label for="prioridade">Prioridade:</label>
+            <select id="prioridade">
+                <option value="Alta">Alta</option>
+                <option value="Média">Média</option>
+                <option value="Baixa">Baixa</option>
+            </select>
+
+            <label for="status">Status:</label>
+            <select id="status">
+                <option value="A Fazer">A Fazer</option>
+                <option value="Fazendo">Fazendo</option>
+                <option value="Pronto">Pronto</option>
+            </select>
+
+            <!-- Campo para Seleção do Usuário -->
+            <label for="usuario_id">Usuário:</label>
+            <select id="usuario_id" required>
+                <!-- Opções de usuários serão carregadas aqui -->
+            </select>
+
+            <button type="submit">Cadastrar Tarefa</button>
+        </form>
+    </div>
+
+    <script src="js/tarefas.js"></script> <!-- Link do JavaScript -->
+</body>
+</html>

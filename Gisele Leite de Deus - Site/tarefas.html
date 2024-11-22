@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tarefas.css">
+    <title>Gerenciamento de Tarefas</title>
+</head>
+<body>
+    <!-- Menu de navegação -->
+    <div class="navbar">
+        <h1>Gerenciamento de Tarefas</h1>
+        <ul>
+            <li><a href="index.html">Cadastro de Usuários</a></li>
+            <li><a href="cadTarefas.html">Cadastro de Tarefas</a></li>
+            <li><a href="tarefas.html">Gerenciar Tarefas</a></li>
+        </ul>
+    </div>
+
+    <!-- Container das Tarefas -->
+    <div class="task-container">
+        
+        <!-- A Fazer -->
+        <div class="task-column" id="task-list-a-fazer">
+            <h3>A Fazer</h3>
+            <!-- Tarefas A Fazer serão carregadas aqui -->
+        </div>
+
+        <!-- Fazendo -->
+        <div class="task-column" id="task-list-fazendo">
+            <h3>Fazendo</h3>
+            <!-- Tarefas Fazendo serão carregadas aqui -->
+        </div>
+
+        <!-- Pronto -->
+        <div class="task-column" id="task-list-pronto">
+            <h3>Pronto</h3>
+            <!-- Tarefas Pronto serão carregadas aqui -->
+        </div>
+    </div>
+
+    <script src="js/gerenciarTarefas.js"></script>  <!-- Link do JS -->
+</body>
+</html>
